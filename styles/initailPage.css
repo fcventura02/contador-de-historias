@@ -1,0 +1,58 @@
+@import url("./variables.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/07/19/07/books-2606859_960_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	backdrop-filter: blur(5px);
+	
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+	padding: 0.5rem;
+	border-radius: 8px;
+	background-color: rgba(215, 215, 215, 0.664);
+}
+
+label {
+  font-family: var(--font-cairo);
+  font-size: 1.2rem;
+}
+
+select,
+input {
+  font-family: var(--font-cairo);
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 5px 13px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="button"] {
+  margin-top: 1rem;
+  font-family: var(--font-cairo);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--color-with);
+  border: none;
+  border-radius: 10px;
+  background-color: var(--color-green);
+  transition: background 0.8s;
+}
+
+input[type="button"]:hover {
+  color: var(--color-with);
+  background-color: var(--color-green-dark);
+}

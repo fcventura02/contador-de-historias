@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icon.png" />
+    <title>Contos</title>
+    <!--Styles-->
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/initailPage.css" />
+    <!--Fonts google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Zilla+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--scripts-->
+    <script src="scripts/initialPage.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <form id="form">
+        <label for="nameHero">Nome do Herói</label>
+        <input
+          id="nameHero"
+          type="text"
+          name="nameHero"
+          pattern="[A-Za-z]{3,}"
+          title="É preciso usar apenas letras e ter no mínimo 3 letras"
+          required
+        />
+        <label for="typeHeroGenre">Espécie do Herói</label>
+        <select id="typeHeroGenre" name="typeHeroGenre">
+          <option value="humam">Humano</option>
+          <option value="dryad">Driade da floresta</option>
+          <option value="dragons">Dragão</option>
+          <option value="goblin">Goblin</option>
+        </select>
+        <label for="typeTale">Gênero do texto</label>
+        <select id="typeTale" name="typeTale">
+          <option value="zombs">Zumbis</option>
+          <option value="fairies">Conto de fadas</option>
+          <option value="dragons">Dragões</option>
+          <option value="middle Ages">Idade média</option>
+        </select>
+        <label for="typeIncident">Incidente que ocasionou a nova era</label>
+        <select id="typeIncident" name="typeIncident">
+          <option value="alienInvasion">Invasão alienigena</option>
+          <option value="chemicalWarfare">Gerra química</option>
+          <option value="endOfTimes">Fim dos tempos</option>
+          <option value="portal">Portal do submundo</option>
+        </select>
+        <label for="typeHeroEquipment">Equipamento do Herói</label>
+        <select id="typeHeroEquipment" name="typeHeroEquipment">
+          <option value="sword">Espada de são jorge</option>
+          <option value="spiritualMagic">Magia Espiritual</option>
+          <option value="cupHolderMagic">Porta copo magico</option>
+          <option value="mythicalSphere">Esfera mítica</option>
+        </select>
+        <label for="typeLocation">Lugar onde ocorreu a história</label>
+        <select id="typeLocation" name="typeLocation">
+          <option value="darkForest">Floresta sombria</option>
+          <option value="galaxyOfDesires">Galaxia dos desejos</option>
+          <option value="mountainOfTheWise">Montanha dos sábios</option>
+          <option value="bermudaTriangle">Triângulo das bermudas</option>
+        </select>
+        <input id="btSubmit" type="submit" value="Montar história" />
+      </form>
+    </main>
+  </body>
+</html>
