@@ -1,0 +1,31 @@
+@import url("./variables.css");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/11/08/09/07/book-2929646_960_720.jpg"), url("https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"), url("https://cdn.pixabay.com/photo/2017/10/12/20/15/photoshop-2845779_960_720.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	backdrop-filter: blur(5px);
+	
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 980px;
+	max-height: 500px;
+	overflow: auto;
+	padding: 0.5rem;
+	border-radius: 8px;
+	background-color: rgba(215, 215, 215, 0.664);
+}
+
+span{
+	font-family: var(--font-zillaSlab);
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	font-size: 1.2rem;
+}
+
