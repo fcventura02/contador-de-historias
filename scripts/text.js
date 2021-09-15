@@ -5,24 +5,11 @@ import {
   HeroGenre,
   Tale,
 } from "./prehistorias.js";
-var btm = document.getElementById("backPage");
+const audio = document.getElementById("audio");
+const btm = document.getElementById("backPage");
 btm.addEventListener("click", () => (window.location.href = "/"));
 //text
-var i = 0;
-let oldImg = null;
 const year = new Date().getFullYear();
-var txt = `Este {typeTale}.
-A história se passa {typeLocation}, 
-{locationDescription} Está história fala sobre um jovem Herói 
-chamado {name}, {typeHeroGenre}. O equipamento deste herói é 
-{HeroEquipment} Na grande era de ouro que ocorreu em ${year}, 
-foi previsto uma grande profecia que viria a acontecer.
-Chegado o grande dia da profecia, enquanto os moradores olhavam para
-os céus e avistaram algo estranho, algo começou a acontecer, algo que 
-ninguém imaginaria. {typeIncident}. Foi quando nosso herói tomou em mãos sua
-arma e gritou, "Pelo meu povo, eu lutarei e os protegerei.". Com isso foi iniciado uma grande batalha
-que nosso herói venceu com bastante custo, e ficaram todos felizes.... Fim`;
-var speed = 85;
 const {
   nameHero,
   typeHeroEquipment,
@@ -33,6 +20,20 @@ const {
 } = localStorage;
 
 if (!nameHero) window.location.href = "/";
+let i = 0;
+let oldImg = null;
+let txt = `Este {typeTale}.
+A história se passa {typeLocation}, 
+{locationDescription} Está história fala sobre um jovem Herói 
+chamado {name}, {typeHeroGenre}. O equipamento deste herói é 
+{HeroEquipment} Na grande era de ouro que ocorreu em ${year}, 
+foi previsto uma grande profecia que viria a acontecer.
+Chegado o grande dia da profecia, enquanto os moradores olhavam para
+os céus e avistaram algo estranho, algo começou a acontecer, algo que 
+ninguém imaginaria. {typeIncident}. Foi quando nosso herói tomou em mãos sua
+arma e gritou, "Pelo meu povo, eu lutarei e os protegerei.". Com isso foi iniciado uma grande batalha
+que nosso herói venceu com bastante custo, e ficaram todos felizes.... Fim`;
+let speed = 85;
 
 txt = txt
   .replace("{typeTale}", Tale[typeTale])
@@ -50,8 +51,6 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
   if (i === txt.length) {
-    const audio = document.getElementById("audio");
-    console.log(audio);
     audio.pause();
   }
 }
