@@ -3,29 +3,71 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://cdn.pixabay.com/photo/2017/11/08/09/07/book-2929646_960_720.jpg"), url("https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"), url("https://cdn.pixabay.com/photo/2017/10/12/20/15/photoshop-2845779_960_720.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	backdrop-filter: blur(5px);
-	
+	background: #000;
 }
 .container {
   display: flex;
   flex-direction: column;
   width: 90%;
   max-width: 980px;
-	max-height: 500px;
-	overflow: auto;
-	padding: 0.5rem;
-	border-radius: 8px;
-	background-color: rgba(215, 215, 215, 0.664);
+  max-height: 500px;
+  overflow: auto;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background-color: rgba(215, 215, 215, 0.664);
 }
 
-span{
-	font-family: var(--font-zillaSlab);
-	letter-spacing: 2px;
-	word-spacing: 3px;
-	font-size: 1.2rem;
+span {
+  font-family: var(--font-zillaSlab);
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 1.2rem;
 }
 
+.slide {
+  display: block;
+  margin: auto;
+  position: absolute;
+}
+
+#slide div {
+  display: none;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2018/01/09/20/24/wood-3072434__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+}
+
+#slide .active {
+  display: block;
+  opacity: 1;
+
+  -webkit-animation: identifier 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -moz-animation: identifier 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -o-animation: identifier 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation: identifier 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#slide .notActived {
+  display: none;
+  opacity: 0;
+}
