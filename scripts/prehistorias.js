@@ -4,7 +4,7 @@ const HeroEquipment = {
   spiritualMagic:
     "magia espiritual, uma abilidade que consiste em concentrar a magia ao redor do mago para evocar seus feitiços.",
   cupHolderMagic:
-    "porta copo magico, que serve para aqueles que nao possuem ou possuem poucas abilidades mágicas, este item é capas de controlar os 4 elementos próximos de quem a controla.",
+    "porta copo magico, que serve para aqueles que nao possuem ou possuem poucas abilidades mágicas, este item é capás de controlar os 4 elementos próximos de quem a controla.",
   mythicalSphere:
     "esfera mítica, um item ultra raro onde so aqueles escolhidos sao capazes de controlar-lá, possuindo enorme manipulação mágica e de enorme poder.",
 };
@@ -61,7 +61,7 @@ const Location = {
   bermudaTriangle: {
     name: "no Triângulo das Bermudas",
     description:
-      "Um lugar lendario amaldiçoado e temido por muitos marinheiros, dizem que neste lugar existem varios monstros que vivem dentro do mar a espreita daqueles que se atreverem à adentar nessas águas.",
+      "Um lugar lendário amaldiçoado e temido por muitos marinheiros, dizem que neste lugar existem vários monstros que vivem dentro do mar a espreita daqueles que se atreverem a adentar nessas águas.",
     bg: [
       "https://cdn.pixabay.com/photo/2014/11/19/01/01/churning-536850__340.jpg",
       "https://cdn.pixabay.com/photo/2018/03/23/19/34/storm-3254676__340.jpg",

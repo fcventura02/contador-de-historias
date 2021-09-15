@@ -1,29 +1,78 @@
 @import url("./variables.css");
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-	background: #000;
+  background: #000;
 }
+.menu{
+  display: flex;
+  width: 90%;
+  max-width: 980px;
+}
+button {
+  justify-items: center;
+  height: 54px;
+  background: rgba(215, 215, 215, 0.432);
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  margin-right: 5px;
+}
+
+audio{
+  width: 100%;
+}
+
+audio::-webkit-media-controls-enclosure {
+  margin-left: 5px;
+  border-radius: 8px;
+  background-color: rgba(215, 215, 215, 0.432);
+}
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display  {
+  display: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-	box-sizing: border-box;
+  box-sizing: border-box;
   width: 90%;
   max-width: 980px;
   max-height: 500px;
-  overflow: auto;
-	padding: 0.8rem;
+  overflow-y: auto;
+  padding: 0.8rem;
   border-radius: 8px;
   background-color: rgba(215, 215, 215, 0.664);
 }
 
-span {
+.contain {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.contain span {
   font-family: var(--font-zillaSlab);
   letter-spacing: 2px;
   word-spacing: 3px;
   font-size: 1.2rem;
+  text-indent: 50px;
+  margin-top: 10px;
 }
+
+.contain .aspas {
+  position: absolute;
+  top: -8px;
+  left: 5px;
+}
+
 
 .slide {
   display: block;
