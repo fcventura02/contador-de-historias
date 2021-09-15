@@ -17,7 +17,8 @@ body {
   max-width: 980px;
   display: flex;
   flex-direction: column;
-	padding: 0.5rem;
+  box-sizing: border-box;
+	padding: 0.8rem;
 	border-radius: 8px;
 	background-color: rgba(215, 215, 215, 0.664);
 }
@@ -40,7 +41,7 @@ input {
   box-sizing: border-box;
 }
 
-input[type="button"] {
+input[type="submit"] {
   margin-top: 1rem;
   font-family: var(--font-cairo);
   font-size: 1.5rem;
@@ -52,7 +53,7 @@ input[type="button"] {
   transition: background 0.8s;
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
   color: var(--color-with);
   background-color: var(--color-green-dark);
 }
