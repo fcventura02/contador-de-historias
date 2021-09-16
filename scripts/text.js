@@ -7,7 +7,7 @@ import {
 } from "./prehistorias.js";
 const audio = document.getElementById("audio");
 const btm = document.getElementById("backPage");
-btm.addEventListener("click", () => (window.location.href = "/"));
+btm.addEventListener("click", () => (window.location.href = "./index.html"));
 //text
 const year = new Date().getFullYear();
 const {
