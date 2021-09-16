@@ -7,7 +7,7 @@ import {
 } from "./prehistorias.js";
 const audio = document.getElementById("audio");
 const btm = document.getElementById("backPage");
-btm.addEventListener("click", () => (window.location.href = "/"));
+btm.addEventListener("click", () => (window.location.href = "./index.html"));
 //text
 const year = new Date().getFullYear();
 const {
@@ -19,7 +19,7 @@ const {
   typeTale,
 } = localStorage;
 
-if (!nameHero) window.location.href = "/";
+if (!nameHero) window.location.href = "./index.html";
 let i = 0;
 let oldImg = null;
 let txt = `Este {typeTale}.
